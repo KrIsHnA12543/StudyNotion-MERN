@@ -38,11 +38,11 @@ function ReviewSlider() {
 
   return (
     <div className="text-white ">
-      <div className="max-w-maxContentTab lg:w-[900px] sm:w-[200px] flex  ">
+      <div className="w-full max-w-[900px] mx-auto  ">
         <Swiper
           slidesPerView={2}
           spaceBetween={25}
-          loop={true}
+          loop={reviews.length > 2}
           freeMode={true}
           autoplay={{
             delay: 4000,
@@ -64,7 +64,7 @@ function ReviewSlider() {
               },
           }}
           modules={[FreeMode, Pagination, Autoplay]}
-          className="lg:w-[900px] sm:w-[200px]"
+          className="w-full"
         >
           {reviews.map((review, i) => {
             return (
