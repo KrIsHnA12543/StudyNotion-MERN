@@ -1,5 +1,5 @@
 const otpTemplate = (otp) => {
-	return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
 	<html>
 	
 	<head>
@@ -78,7 +78,7 @@ const otpTemplate = (otp) => {
 				Once your account is verified, you will have access to our platform and its features.</p>
 			</div>
 			<div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
-					href="mailto:kg067823@gmail.com">kg067823@gamil.com</a>. We are here to help!</div>
+					href="mailto:kg067823@gamil.com">kg067823@gamil.com</a>. We are here to help!</div>
 		</div>
 	</body>
 	
