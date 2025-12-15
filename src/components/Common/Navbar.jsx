@@ -10,6 +10,7 @@ import { apiConnector } from "../../services/apiConnector"
 import { categories } from "../../services/apis"
 import { ACCOUNT_TYPE } from "../../utils/constants"
 import ProfileDropdown from "../core/Auth/ProfileDropdown"
+import MobileMenu from "./MobileMenu"
 
 // const subLinks = [
 //   {
@@ -159,9 +160,13 @@ function Navbar() {
           )}
           {token !== null && <ProfileDropdown />}
         </div>
-        <button className="mr-4 md:hidden">
+        <div className="relative z-50">
+          {/* <button className="mr-4 md:hidden">
           <AiOutlineMenu fontSize={24} fill="#AFB2BF" />
-        </button>
+          </button> */}
+          <MobileMenu />
+        </div>
+        
       </div>
     </div>
   )
